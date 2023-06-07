@@ -1,0 +1,143 @@
+%-------------------------
+% Entry-level Cover-letter Template in LaTeX
+% Made to go with "Entry-level Resume in laTeX" - here
+% Version - v1.0
+% Last Edits - October 5, 2021
+% Author : Jayesh Sanwal
+% Reach out to me on LinkedIn(/in/jsanwal), with any suggestions, ideas, issues, etc.
+
+
+% --- VARIABLES --- %
+% Personal Details
+\newcommand{\name}{John Snow}
+\newcommand{\currentjob}{Lord Commander}
+\newcommand{\email}{john.doe@email.com}
+\newcommand{\phone}{(XXX) XXX-XXXX}
+\newcommand{\linkedin}{johndoe}
+\newcommand{\github}{johndoe}
+
+% Application Specific
+\newcommand{\recipient}{Colonel Sanders}
+\newcommand{\company}{Kentucky Fried Chicken}
+\newcommand{\position}{Director of Defence}
+
+
+
+%%%%%%% -----------------------------------------------
+%%%%%%%  STARTING HERE, DO NOT TOUCH ANYTHING
+%%%%%%% -----------------------------------------------
+%%%% Define Document type
+\documentclass[11pt,a4]{article}
+
+%%%% Include Packages
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+ \usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{tabularx}
+\hypersetup{colorlinks=true,urlcolor=black}
+\usepackage[11pt]{moresize}
+\usepackage{setspace}
+\usepackage[inline]{enumitem}
+\usepackage{ragged2e}
+\usepackage{anyfontsize}
+
+%%%% Set Margins
+\usepackage[margin=1cm]{geometry}
+
+
+%%%% Set Page Style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%%% Set URL Style
+\urlstyle{same}
+
+%%%% Set Indentation
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%%%% Set Secondary Color, Page Number Color, Footer Text
+\definecolor{UI_blue}{RGB}{32, 64, 151}
+\definecolor{HF_color}{RGB}{179, 179, 179}
+\rfoot{{\color{HF_color} \thepage \ of \ 1, Updated \today}}
+
+%%%% Set Heading Format
+\titleformat{\section}{
+\color{UI_blue} \scshape \raggedright \large
+}{}{0em}{}[\vspace{-0.7cm} \hrulefill \vspace{-0.2cm}]
+%%%%%%% --------------------------------
+%%%%%%%  END OF "DO NOT TOUCH" REGION
+%%%%%%% --------------------------------
+
+
+
+\begin{document}
+\begin{center}
+    \begin{minipage}[b]{0.24\textwidth}
+            \large \phone \\
+            \large \href{mailto:\email}{\email}
+    \end{minipage}%
+    \begin{minipage}[b]{0.5\textwidth}
+            \centering
+            {\Huge \name} \\ %
+            \vspace{0.1cm}
+            {\color{UI_blue} \Large{\currentjob}} \\
+    \end{minipage}%
+    \begin{minipage}[b]{0.24\textwidth}
+            \flushright \large
+            {\href{https://www.linkedin.com/in/\linkedin}{linkedin.com/in/\linkedin} } \\
+            \href{https://https://github.com/\github}{github.com/\github}
+    \end{minipage}
+
+\vspace{-0.15cm}
+{\color{UI_blue} \hrulefill}
+\end{center}
+
+\justify
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{12pt}
+\vspace{0.2cm}
+\begin{center}
+    {\color{UI_blue} \Large{COVER LETTER}}
+\end{center}
+
+Date: \today \par \vspace{-0.1cm}
+Dear \recipient{},
+
+I am writing to express my keen interest in the \position{} role at \company{}. Having recently learned about the vacancy, I am excited to submit my application and believe that my extensive leadership experience and unique skill set make me an exceptional candidate for this position.
+
+Throughout my distinguished career as the Lord Commander of the Night's Watch, I have consistently demonstrated unwavering dedication, strategic thinking, and the ability to lead and inspire others. As the commanding officer responsible for defending the realms of men against the threats from beyond the Wall, I have honed my skills in managing complex operations, fostering teamwork, and making crucial decisions under immense pressure.
+
+During my tenure as Lord Commander, I successfully orchestrated several defense strategies against the Night King and his undead army, showcasing my exceptional strategic planning abilities and adaptability in the face of adversity. Through effective communication and collaboration with a diverse group of individuals, including the Night's Watch members, the Free Folk, and the Northern Houses, I have proven my capability to build strong alliances and foster a spirit of unity to achieve shared objectives.
+
+My leadership style is characterized by a strong sense of duty, integrity, and empathy, as I prioritize the well-being and development of my team members. By fostering a culture of continuous learning, I have instilled a sense of purpose and commitment in those under my command, resulting in enhanced morale, high-performance levels, and increased operational efficiency.
+
+Moreover, my experience in dealing with critical situations and making tough decisions has equipped me with exceptional crisis management skills. I am well-versed in handling unforeseen challenges, effectively mitigating risks, and maintaining composure in high-stakes environments. My track record of ensuring the safety and security of the realms of men stands as a testament to my unwavering commitment to upholding the values and objectives of any organization I serve.
+\par
+
+In addition to my leadership capabilities, I possess a diverse range of skills that I believe will be assets in this role. These include exceptional interpersonal and communication skills, strategic planning and execution, budget management, conflict resolution, and the ability to inspire and motivate teams to achieve extraordinary results.
+\par
+
+I am confident that my background and experience as Lord Commander of the Night's Watch, combined with my strong leadership abilities and dedication to excellence, make me an ideal candidate for the \position{} role at \company{}. I am eager to bring my unique perspective, insights, and passion for achieving organizational goals to contribute to the continued success of your esteemed organization.
+\par
+
+I have attached my resume for your review, which provides a more comprehensive overview of my qualifications. I would welcome the opportunity to discuss my application further and explore how my skills and experience align with the needs of \company{}. Thank you for considering my application.
+
+% ----- SIGNATURE ----- %
+\vspace{0.5cm}
+\raggedright
+Yours Faithfully \\ \name \\ \phone \\ \href{mailto:\email}{\email}
+
+\end{document}
