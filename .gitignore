@@ -1,3 +1,7 @@
 # Workspace
 .idea/
 __pycache__/
+
+# LaTeX output files
+build_*/*
+build/
