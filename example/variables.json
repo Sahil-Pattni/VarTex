@@ -1,0 +1,43 @@
+{
+  "name": [
+    "John Snow",
+    "Luke Skywalker",
+    "Ted Lasso"
+  ],
+  "currentjob": [
+    "Lord Commander",
+    "Jedi Grand Master",
+    "\"Football\" Coach"
+  ],
+  "email": [
+    "john.snow@winterfell.com",
+    "luke\\_skywalker@tatooinemail.com",
+    "ted.lasso@believe.com"
+  ],
+  "phone": "(XXX) XXX-XXXX",
+  "linkedin": [
+    "johnsnow",
+    "lskywalker",
+    "tedlasso"
+  ],
+  "github": [
+    "johnsnow",
+    "lskywalker",
+    "tedlasso"
+  ],
+  "recipient": [
+    "Colonel Sanders",
+    "Jabba the Hutt",
+    "The Queen of England"
+  ],
+  "company": [
+    "Kentucky Fried Chicken",
+    "Democratic Government of Tatooine",
+    "Buckingham Palace"
+  ],
+  "position": [
+    "Directory of Security",
+    "Palace Security",
+    "Tea Tester"
+  ]
+}
