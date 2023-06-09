@@ -69,12 +69,7 @@ class KeyValueReader:
                 for i in range(n):
                     variables[i][key] = value
 
-
         return variables
-
-
-
-
 
     def _read_csv(self, file_path: str) -> dict:
         """
