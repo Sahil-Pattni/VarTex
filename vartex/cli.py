@@ -1,7 +1,7 @@
 from vartex import VarTex
 import argparse, sys
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("tex_file", help="The tex file to compile", type=str)
     parser.add_argument("--json", help="The JSON file for the variables", type=str)
@@ -9,6 +9,8 @@ if __name__ == "__main__":
     parser.add_argument("--build-dir", help="The build directory", type=str)
 
     args = parser.parse_args()
+
+    # TODO: Handle when no arguments are passed.
 
     if args.json is None and args.csv is None:
         print("Error: must specify either --json or --csv", file=sys.stderr)
@@ -23,3 +25,6 @@ if __name__ == "__main__":
 
     vartex = VarTex(args.tex_file, variables_file, args.build_dir, mode)
     vartex.run()
+
+if __name__ == "__main__":
+    main()

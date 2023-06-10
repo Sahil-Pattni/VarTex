@@ -6,7 +6,7 @@ import glob
 import logging
 from typing import Optional
 
-from variable_reader import KeyValueReader as kvreader
+from vartex.variable_reader import KeyValueReader as kvreader
 
 
 class VarTex:
