@@ -17,7 +17,7 @@ class VarTex:
         build_directory: Optional[str] = None,
         variable_format: str = "json",
     ):
-        self.__build_directory = build_directory or "build"
+        self.__build_directory = build_directory or "vartex_build"
         self.__variables = kvreader(variables_file, variable_format).read()
         self._read_tex_file(tex_file)
 
