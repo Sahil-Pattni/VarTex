@@ -1,6 +1,7 @@
 # Workspace
 .idea/
 __pycache__/
+vartex.egg-info/
 
 # LaTeX output files
 build_*/*
