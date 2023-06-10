@@ -72,7 +72,6 @@ class VarTex:
                 logging.warning(f"Failed to delete file `{file}`.")
                 pass
 
-
     def _generate_tex_file(self, variables: dict) -> str:
         """
         Generate a tex file with the variables replaced.
@@ -140,9 +139,7 @@ class VarTex:
         for key, value in variables.items():
             pattern = r"\\newcommand{\\" + key + r"}{(.+)}"
             return_str = re.sub(
-                pattern,
-                r"\\newcommand{\\" + key + r"}{" + value + r"}",
-                return_str
+                pattern, r"\\newcommand{\\" + key + r"}{" + value + r"}", return_str
             )
         return return_str
 

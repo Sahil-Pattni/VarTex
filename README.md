@@ -1,5 +1,6 @@
 # VarTex
-A CLI tool to generate LaTeX files from a template and a JSON file.
+VarTeX is a command line tool that allows you to generate and compile 
+multiple LaTeX files from a single template file and a JSON/CSV file containing the variables.
 
 ### Usage
 

@@ -1,6 +1,7 @@
 from vartex import VarTex
 import argparse, sys
 
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("tex_file", help="The tex file to compile", type=str)
@@ -23,6 +24,7 @@ def main():
 
     vartex = VarTex(args.tex_file, variables_file, args.build_dir, mode)
     vartex.run()
+
 
 if __name__ == "__main__":
     main()
