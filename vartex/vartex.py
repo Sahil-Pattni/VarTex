@@ -37,7 +37,7 @@ class VarTex:
         self._create_pdfs()
         logging.info("Done.")
         logging.info("Cleaning up...")
-        self.cleanup()
+        self._cleanup()
         logging.info("Done.")
 
     def _create_pdfs(self) -> None:
@@ -53,7 +53,7 @@ class VarTex:
             logging.info(f"Compiling tex file `{filename}.tex`...")
             self._compile(f"{self.__build_directory}/{filename}.tex")
 
-    def cleanup(self) -> None:
+    def _cleanup(self) -> None:
         """
         Clean up the build directory.
         """
