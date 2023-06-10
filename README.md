@@ -5,6 +5,12 @@ multiple LaTeX files from a single template file and a JSON/CSV file containing 
 ### Usage
 
 ---
+To install the package, use the following command:
+
+```bash
+pip install vartex
+```
+
 To run the command, use the following command:
 
 ```bash

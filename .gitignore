@@ -2,10 +2,12 @@
 .idea/
 __pycache__/
 vartex.egg-info/
-
+vartex.zip
 # LaTeX output files
 build_*/*
 build/
 
 # Project specific
 temp.py
+.env
+.DS_Store
