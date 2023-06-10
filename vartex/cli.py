@@ -10,8 +10,6 @@ def main():
 
     args = parser.parse_args()
 
-    # TODO: Handle when no arguments are passed.
-
     if args.json is None and args.csv is None:
         print("Error: must specify either --json or --csv", file=sys.stderr)
         sys.exit(1)
