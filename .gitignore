@@ -5,3 +5,6 @@ __pycache__/
 # LaTeX output files
 build_*/*
 build/
+
+# Project specific
+temp.py
